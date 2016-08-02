@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+    >
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:id="@+id/thething"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+                android:id="@+id/txtSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="sender"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:layout_alignParentLeft="true"
+
+                android:textColor="@android:color/black" android:textStyle="bold"/>
+
+
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSender"
+                android:layout_alignParentLeft="true"
+                android:padding="3dp"
+                android:background="@color/colorPrimaryDark"
+            android:id="@+id/msglayout"
+
+
+                >
+
+            <TextView
+                    android:id="@+id/txtMessage"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp"
+                    android:text="Hello"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6dp"
+            android:text="date"
+
+             />
+    </LinearLayout>
+</RelativeLayout>
